@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+.circle{
+    background-image: url("./assets/rings.svg");
+    background-repeat: no-repeat;
+    width: 146px;
+    height: 146px;
+    position: absolute;
+}
+.whitebox{
+    width: 327px;
+    height: 478px;
+    border-radius: 8px;
+    background-color:rgba(255, 255, 255, 1);
+    box-shadow: rgb(127 137 185 / 15%) 0px 20px 30px -5px;
+    text-align: center;
+    padding-top: 35px;
+    margin-top: 50px;
+}
+.text{
+    z-index: 1;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 65px;
+    position: absolute;
+}
+.head{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    background-color:  rgba(241, 245, 254, 1);
+    border-radius: 0 0 0 191.5px;
+    margin: auto;
+    position: relative;
+}
+h1{
+    font-size: 20px;
+    line-height: 27.32px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    color:  rgba(41, 51, 86, 1);
+}
+h2{
+    font-size: 12px;
+    line-height: 16.4px;
+    font-weight: 800;
+    color: rgba(132, 142, 173, 1);
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1.71px;
+    padding-bottom: 25px;
+}
+p{
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 600;
+    color: rgba(132, 142, 173, 1);
+    font-family: 'Manrope', sans-serif;
+    margin-top: 10px;
+}
+.slider{
+    appearance: none;
+    background-color: hsl(174, 77%, 80%);
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+h3{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.8px;
+    color: rgba(41, 51, 86, 1);
+}
+.price{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 25px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 2.688rem;
+    height: 1.375rem;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slidcircle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 2.125rem;
+}
+.slidcircle::before{
+    position: absolute;
+    content: "";
+    height: 0.875rem;
+    width: 0.875rem;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slidcircle{
+    background-color: #7AEADF;
+}
+input:checked + .slidcircle::before{
+    transform: translateX(26px);
+}
+
+.discount{
+    width: 41px;
+    height: 19px;
+    border-radius: 9.5px;
+    background-color:  rgba(254, 237, 232, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h4{
+    font-size: 10px;
+    line-height: 13.66px;
+    font-weight: 800;
+    color:  rgba(255, 141, 104, 1);
+    font-family: 'Manrope', sans-serif;
+}
+.billing{
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.billing p{
+    font-size: 12px;
+}
+.line{
+    width: 327px;
+    height: 1px;
+    background-color:  rgba(236, 240, 251, 1);
+}
+.complete1, .complete2, .complete3{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer{
+    padding-top: 14px;
+}
+.button{
+    width: 170px;
+    height: 41px;
+    border-radius: 20.5px;
+    border: none;
+    background-color: rgba(41, 51, 86, 1);
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.button p{
+    color:  rgba(190, 205, 255, 1);
+    margin: 0;
+}
+.complete3{
+    padding-bottom: 28px;
+}
+h5{
+   display: none;
+}
+.button p:hover{
+    color: #FFFFFF;;
+}
+
+@media screen and (min-width: 1400px){
+    .whitebox{
+        width: 540px;
+        height: 397px;
+        border-radius: 8px;
+        margin-top: 50px;
+    }
+    .text{
+        width: 395px;
+    }
+    .line{
+        width: 540px;
+    }
+    .lastsection{
+        display: flex;
+        gap: 130px;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        align-items: center;
+        padding: 8px 40px 0px 48px;
+        justify-content: space-between;
+    }
+    .slider{
+        width: 444px;
+    }
+    h2{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    .month p{
+        font-size: 16px;
+    }
+    .slide{
+        order: 3;
+    }
+    h5{
+        display:inline-block;
+        font-size: 10px;
+        line-height: 13.66px;
+        font-weight: 800;
+        color:  rgba(255, 141, 104, 1);
+        font-family: 'Manrope', sans-serif;
+    }
+    .billing{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    .footer{
+        padding: 30px 0px 0px 42px;
+    }
+    .button{
+        margin-top: 47px;
+    }
+    .discount{
+        width: 80px;
+    }
+   
+
+}
